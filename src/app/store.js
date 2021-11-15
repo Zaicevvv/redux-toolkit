@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import loaderReducer from '../features/loader/loaderSlice';
+import feedbacksReducer from '../features/feedback/feedbacksSlice';
 
 export const store = configureStore({
   reducer: {
-    fetchingItems: loaderReducer,
+    feedbacks: feedbacksReducer,
   },
 });
